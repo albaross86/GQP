@@ -1,5 +1,5 @@
 import pickle
-import numpy
+import numpy as np
 
 def get_prediction(parameter_1, parameter_2):
     with open('models/model2.pkl', 'wb') as f:
