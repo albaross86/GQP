@@ -8,7 +8,7 @@ def get_prediction(plotnost, modul_uprugosti, otverditel, epoxidy, temperatura, 
     
     params = np.array([[plotnost], [modul_uprugosti], [otverditel], [epoxidy], [temperatura], [pov_plotnost],
                        [modul_upr_ras], [proch_ras], [smola], [ugol_nashivki], [shag_nashivki], [plot_nashivki]])
-    params = model.transform(params)
+    params = model.fit_transform(params)
     y_pred = model.predict(params)
     
  
