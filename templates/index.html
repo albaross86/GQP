@@ -5,10 +5,46 @@
 <body>
 <h1>Приложение для рекомендации соотношения матрица-наполнитель посредством работы искусственной нейронной сети</h1> 
 <form method="post">
-    <p><label>Введите параметр 1</label>
-    <input type="number" name="parameter_1"></p>
-    <p><label>Введите параметр 2</label>
-    <input type="number" name="parameter_2"></p>
+    <p><label>1. Введите значение параметра "Плотность, кг/м3"</label>
+    <br/><input type="number" step="any" name="01_plotnost"></p>
+
+    <p><label>2. Введите значение параметра "Модуль упругости, ГПа"</label>
+    <br/><input type="number" step="any" name="02_modul_uprugosti"></p>
+
+    <p><label>3. Введите значение параметра "Количество отвердителя, м.%"</label>
+    <br/><input type="number" step="any" name="03_otverditel"></p>
+
+    <p><label>4. Введите значение параметра "Содержание эпоксидных групп,%_2"</label>
+    <br/><input type="number" step="any" name="04_epoxidy"></p>
+
+    <p><label>5. Введите значение параметра "Температура вспышки, С_2"</label>
+    <br/><input type="number" step="any" name="05_temperatura"></p>
+
+    <p><label>6. Введите значение параметра "Поверхностная плотность, г/м2"</label>
+    <br/><input type="number" step="any" name="06_pov_plotnost"></p>
+
+    <p><label>7. Введите значение параметра "Модуль упругости при растяжении, ГПа"</label>
+    <br/><input type="number" step="any" name="07_modul_upr_ras"></p>
+
+    <p><label>8. Введите значение параметра "Прочность при растяжении, МПа"</label>
+    <br/><input type="number" step="any" name="08_proch_ras"></p>
+
+    <p><label>9. Введите значение параметра "Потребление смолы, г/м2"</label>
+    <br/><input type="number" step="any" name="09_smola"></p>
+    
+    <p><label>10. Выберите значение параметра "Угол нашивки"</label>
+    <br/><select id="10_ugol_nashivki" name="10_ugol_nashivki">
+    <option value="0">0</option>
+    <option value="90">90</option>
+    </select></p>
+    
+    <p><label>11. Введите значение параметра "Шаг нашивки"</label>
+    <br/><input type="number" step="any" name="11_shag_nashivki"></p>
+    
+    <p><label>12. Введите значение параметра "Плотность нашивки"</label>
+    <br/><input type="number" step="any" name="12_plot_nashivki"></p>
+
+
 <input type="submit">
     </form>
 <p>
