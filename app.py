@@ -21,8 +21,8 @@ def index():
         shag_nashivki = request.form.get("11_shag_nashivki")
         plot_nashivki = request.form.get("12_plot_nashivki")
       
-        predc = get_prediction([plotnost], [modul_uprugosti], [otverditel], [epoxidy], [temperatura], [pov_plotnost],
-                       [modul_upr_ras], [proch_ras], [smola], [ugol_nashivki], [shag_nashivki], [plot_nashivki])
+        predc = get_prediction(plotnost, modul_uprugosti, otverditel, epoxidy, temperatura, pov_plotnost,
+                       modul_upr_ras, proch_ras, smola, ugol_nashivki, shag_nashivki, plot_nashivki)
         
         message = f"Рекомендуемое соотношение матрица-наполнитель при значениях параметров {plotnost}, {modul_uprugosti}, {otverditel}, {epoxidy}, {temperatura}, {pov_plotnost}, {modul_upr_ras}, {proch_ras}, {smola}, {ugol_nashivki}, {shag_nashivki}, {plot_nashivki} составляет {predc}"
 
