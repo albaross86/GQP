@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 
 def get_prediction(parameter_1, parameter_2):
-    with open('models/model2.pkl', 'wb') as f:
+    with open('models/model3.pkl', 'wb') as f:
         model = pickle.load(f)
     
     params = np.array([[plotnost], [modul_uprugosti], [otverditel], [epoxidy], [temperatura], [pov_plotnost],
