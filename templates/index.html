@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Cоотношение матрица-наполнитель: нейросеть рекомендует!</title>
+</head>
+<body>
+<h1>Приложение для рекомендации соотношения матрица-наполнитель посредством работы искусственной нейронной сети</h1> 
+<form method="post">
+    <p><label>Введите параметр 1</label>
+    <input type="number" name="parameter_1"></p>
+    <p><label>Введите параметр 2</label>
+    <input type="number" name="parameter_2"></p>
+<input type="submit">
+    </form>
+<p>
+    {% if message %}
+    {{message}}
+    {% endif %}
+</p>
+
+
+</body>
+</html>
