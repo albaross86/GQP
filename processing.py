@@ -8,16 +8,10 @@ def get_prediction(plotnost, modul_uprugosti, otverditel, epoxidy, temperatura, 
         model = pickle.load(f)
     
     min_max_scaler = MinMaxScaler()
-    params = np.array([plotnost, modul_uprugosti, otverditel, epoxidy, temperatura, pov_plotnost,
-                       modul_upr_ras, proch_ras, smola, ugol_nashivki, shag_nashivki, plot_nashivki])
+    params = np.array([plotnost, modul_uprugosti, otverditel, epoxidy, temperatura, pov_plotnost, modul_upr_ras, proch_ras, smola, ugol_nashivki, shag_nashivki, plot_nashivki])
     params = params.reshape(1, -1)
     params = min_max_scaler.fit_transform(params)
     y_pred = model.predict(params)
-    y_pred = y_pred.reshape(-1,1)
 
-    y_pred_inv = min_max_scaler.inverse_transform(y_pred)
-
- 
-
-    return y_pred_inv
+    return y_pred
 
