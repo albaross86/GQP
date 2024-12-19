@@ -13,7 +13,7 @@ def get_prediction(plotnost, modul_uprugosti, otverditel, epoxidy, temperatura, 
     params = params.reshape(1, -1)
     params = min_max_scaler.fit_transform(params)
     y_pred = model.predict(params)
-    y.pred = y.pred.reshape(-1,1)
+    y_pred = y_pred.reshape(-1,1)
 
     y_pred_inv = min_max_scaler.inverse_transform(y_pred)
 
