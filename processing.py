@@ -13,7 +13,5 @@ def get_prediction(plotnost, modul_uprugosti, otverditel, epoxidy, temperatura, 
     params = min_max_scaler.fit_transform(params)
     y_pred = model.predict(params)
 
-    y_pred_inv = min_max_scaler.inverse_transform(np.ravel(y_pred))
-
-    return y_pred_inv
+    return y_pred
 
