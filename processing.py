@@ -16,4 +16,5 @@ def get_prediction(plotnost, modul_uprugosti, otverditel, epoxidy, temperatura, 
     
  
 
-    return min_max_scaler.inverse_transform(y_pred)
+    return min_max_scaler.inverse_transform([y_pred].reshape(-1,1).reshape([y_pred].shape))
+
